@@ -49,7 +49,7 @@ public class MemberAttentionController {
     @RequestMapping(value = "/list/{memberId}", method = RequestMethod.GET)
     @ResponseBody
     public Object list(@PathVariable Long memberId) {
-        //测试
+        //测试dev
         List<MemberBrandAttention> memberBrandAttentionList = memberAttentionService.list(memberId);
         return new CommonResult().success(memberBrandAttentionList);
     }
